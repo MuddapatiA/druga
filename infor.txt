@@ -1,0 +1,13 @@
+Notes & tips
+
+Run where Statistica is installed (client or server). COM won’t work otherwise.
+
+If you hit permission prompts, launch your shell as the same user that runs Statistica.
+
+For very large repos, split the root into subfolders and run in parallel on multiple machines.
+
+The SettingsXML is your goldmine — the script saves the raw XML and also flattens it so you can search for particular parameters across all nodes/workflows.
+
+Heuristics for SQL, regex, filepaths, connection strings are intentionally broad; tweak patterns to your environment.
+
+If some builds expose slightly different COM members, adjust the safe_get(...) attribute lists (e.g., OutputLinks vs Outputs, Nodes vs AnalysisItems).
